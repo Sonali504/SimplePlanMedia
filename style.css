@@ -55,7 +55,7 @@ body {
  .navbar-right {
     display: flex;
     align-items: center;
-    gap: 18px;        /* spacing */
+    gap: 18px;      
 }
 
 /* Login / Signup */
@@ -157,7 +157,6 @@ body {
 }
 
 /* email box */
-/* EMAIL CONTAINER (DESKTOP DEFAULT) */
 .email-container {
     display: flex;
     align-items: center;
@@ -284,7 +283,7 @@ body {
 ======================================================= */
 .chat-icon {
     position: fixed;
-    bottom: 90px;         /* moved above “Go to top” button */
+    bottom: 90px;       
     right: 25px;
     width: 54px;
     height: 54px;
@@ -297,7 +296,7 @@ body {
     font-size: 22px;
     cursor: pointer;
 
-    z-index: 999999999 !important; /* highest possible */
+    z-index: 999999999 !important; 
     opacity: 1 !important;
     visibility: visible !important;
     pointer-events: auto !important;
@@ -582,11 +581,11 @@ body {
 
 /* HOVER — LIFT + SCALE + SHADOW */
 .category-box:hover .category-image {
-    transform: translateY(-10px); /* UPLIFT */
+    transform: translateY(-10px); 
 }
 
 .category-box:hover .category-image img {
-    transform: scale(1.05);       /* SLIGHT ZOOM */
+    transform: scale(1.05);       
     box-shadow: 0 14px 28px rgba(0,0,0,0.25);
 }
 
@@ -704,17 +703,15 @@ body {
     font-weight: 700;
     color: #1d1d8f
 }
-/* Rounded blob-like mask shape (same as screenshot) */
 .teacher-photo-wrap {
     width: 100%;
     height: 270px;
     overflow: hidden;
     position: relative;
-    border-radius: 140px 140px 0 0;  /* creates the curved top-left look */
+    border-radius: 140px 140px 0 0;  
     background: #f5f5f5;
 }
 
-/* Remove background shapes — show only the photo */
 .teacher-photo {
     width: 100%;
     height: 100%;
@@ -1234,7 +1231,6 @@ body {
         border-radius: 15px;
     }
 
-    /* category full width inside collapse */
     .category-wrapper {
         width: 100%;
     }
@@ -1342,7 +1338,6 @@ body {
         border-radius: 10px;
     }
 
-    /* Each card same width on mobile */
     .teacher-row-width .col-md-3 {
         flex: 0 0 70%;
         max-width: 70%;
@@ -1424,7 +1419,7 @@ body {
         height: 130px;
     }
     .go-top {
-        bottom: 80px;  /* lift it above bottom browser bar */
+        bottom: 80px;  
         right: 15px;
         width: 42px;
         height: 42px;

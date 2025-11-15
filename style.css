@@ -17,7 +17,7 @@
 body {
     font-family: "CircularStd", sans-serif;
     background: #ffffff;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 }
 
 /* =======================================================
@@ -283,24 +283,37 @@ body {
    CHAT ICON
 ======================================================= */
 .chat-icon {
-    z-index: 999999 !important; 
     position: fixed;
-    bottom: 25px;
+    bottom: 90px;         /* moved above “Go to top” button */
     right: 25px;
+    width: 54px;
+    height: 54px;
     background: #1d1d8f;
-    padding: 14px 16px;
     border-radius: 50%;
-    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
     font-size: 22px;
     cursor: pointer;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-    animation: floatIcon 2.5s ease-in-out infinite;
+
+    z-index: 999999999 !important; /* highest possible */
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+
+    box-shadow: 0 4px 14px rgba(0,0,0,0.25);
+
+    animation: floatChat 2.2s ease-in-out infinite;
 }
-@keyframes floatIcon {
+
+/* Floating animation */
+@keyframes floatChat {
     0% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
+    50% { transform: translateY(-6px); }
     100% { transform: translateY(0); }
 }
+
 /* =======================================================
    Feature Section
 ======================================================= */
@@ -1105,15 +1118,7 @@ body {
     border: 2px solid #1d1d8f;
 }
 
-/* Small screen improvements */
-@media (max-width: 768px) {
-    .go-top-btn {
-        bottom: 20px;
-        right: 15px;
-        width: 42px;
-        height: 42px;
-    }
-}
+
 
 
 

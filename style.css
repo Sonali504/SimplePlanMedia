@@ -1066,46 +1066,57 @@ body {
 .cta-btn:hover {
     background: #ffe8e2;
 }
-
 /* GO TO TOP BUTTON */
-.go-top {
+.go-top-btn {
     position: fixed;
-    bottom: 20px;           /* reduced for mobile */
-    right: 20px;            /* reduced for mobile */
-    width: 46px;
-    height: 46px;
-
-    background: white;
-    border: 2px solid #1d1d8f;
+    bottom: 30px;
+    right: 30px;
+    width: 48px;
+    height: 48px;
+    background: #1d1d8f;
+    color: white;
     border-radius: 50%;
-    color: #1d1d8f;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
-    font-size: 18px;
-    text-decoration: none;
-
+    font-size: 20px;
     cursor: pointer;
-    z-index: 999999;        /* always above chat icon + shapes */
+    text-decoration: none;
+    z-index: 999999;
 
-    animation: floatUpDown 2.5s ease-in-out infinite;
-    transition: 0.3s ease;
-}
+    /* Animation */
+    animation: topButtonFloat 2.2s ease-in-out infinite;
 
-.go-top:hover {
-    background: #1d1d8f;
-    color: white;
-    transform: translateY(-5px);
+    /* Always visible without JS */
+    opacity: 1;
 }
 
 /* Floating animation */
-@keyframes floatUpDown {
+@keyframes topButtonFloat {
     0% { transform: translateY(0); }
-    50% { transform: translateY(-8px); }
+    50% { transform: translateY(-7px); }
     100% { transform: translateY(0); }
 }
+
+/* Hover effect */
+.go-top-btn:hover {
+    background: #fff;
+    color: #1d1d8f;
+    border: 2px solid #1d1d8f;
+}
+
+/* Small screen improvements */
+@media (max-width: 768px) {
+    .go-top-btn {
+        bottom: 20px;
+        right: 15px;
+        width: 42px;
+        height: 42px;
+    }
+}
+
+
+
 
 
 

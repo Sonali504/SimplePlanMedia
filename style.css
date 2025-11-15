@@ -283,6 +283,7 @@ body {
    CHAT ICON
 ======================================================= */
 .chat-icon {
+    z-index: 999999 !important; 
     position: fixed;
     bottom: 25px;
     right: 25px;

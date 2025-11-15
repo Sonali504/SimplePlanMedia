@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- GREEN SHAPE -->
+    <div class="green-shape"></div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-white py-3 custom-navbar">
+        <div class="container">
+
+            <!-- LOGO -->
+            <a class="navbar-brand nav-logo" href="#">Logo</a>
+
+            <!-- HAMBURGER BUTTON -->
+            <button class="navbar-toggler border-0 shadow-none" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                <i class="fa-solid fa-bars fs-3 text-primary"></i>
+            </button>
+
+            <!-- COLLAPSE MENU -->
+            <div class="collapse navbar-collapse" id="mainNavbar">
+
+                <!-- LEFT MENU ITEMS -->
+                <ul class="navbar-nav me-auto mt-3 mt-lg-0 align-items-lg-center gap-lg-4">
+
+                    <!-- TEACH -->
+                    <li class="nav-item d-block d-lg-none">
+                        <a href="#" class="teach-link nav-link">TEACH|</a>
+                    </li>
+
+                    <!-- CATEGORY DROPDOWN (works inside collapse) -->
+                    <li class="nav-item">
+                        <div class="category-wrapper">
+
+                            <input type="checkbox" id="catToggle" class="cat-checkbox">
+                            <label for="catToggle" class="nav-link categories-link">
+                                CATEGORIES <i class="fa-solid fa-chevron-down"></i>
+                            </label>
+
+                            <div class="category-dropdown">
+                                <div class="category-col">
+                                    <a href="#" class="cat-item active">Language</a>
+                                    <a href="#" class="cat-item highlight">Cooking <span class="arrow">›</span></a>
+                                    <a href="#" class="cat-item">Music</a>
+                                    <a href="#" class="cat-item">Arts & Craft</a>
+                                    <a href="#" class="cat-item">Yoga</a>
+                                    <a href="#" class="cat-item">Academic</a>
+                                    <a href="#" class="cat-item">Back to Roots</a>
+                                    <a href="#" class="cat-item">Funteresting</a>
+                                </div>
+
+                                <div class="category-col">
+                                    <a href="#" class="cat-item">All</a>
+                                    <a href="#" class="cat-item highlight">Indian <span class="arrow">›</span></a>
+                                    <a href="#" class="cat-item">Norwegian</a>
+                                    <a href="#" class="cat-item">Category 04</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </li>
+                </ul>
+
+                <!-- RIGHT MENU ITEMS -->
+                <div class="navbar-right d-flex flex-column flex-lg-row gap-2 mt-3 mt-lg-0">
+                    <a href="#" class="teach-link d-none d-lg-block">TEACH</a>
+                    <a href="#" class="btn btn-login">LOGIN</a>
+                    <a href="#" class="btn btn-signup">SIGNUP</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero-section pb-5">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <!-- LEFT -->
+                <div class="col-lg-6">
+                    <h2 class="hero-title">
+                        Hobbies ❤️ Happiness 🏡 Home
+                    </h2>
+
+                    <p class="text text-secondary mt-3 mb-4">
+                        A Nordic startup which brings incredibly interesting hobbies 
+                        from around the world to people of all ages.
+                    </p>
+
+                    <div class="email-container">
+                        <input type="email" class="email-input" placeholder="Enter your email">
+                        <button class="btn-explore">
+                            START EXPLORING <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- RIGHT IMAGE -->
+                <div class="col-lg-6 position-relative">
+                    <div class="hero-image-wrapper">
+                        <img src="images/familyheader.jpg" class="hero-image">
+                    </div>
+
+                    <!-- ORANGE SHAPE -->
+                    <div class="orange-shape"></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    
+    <!-- Feature Section -->
+     <section class="features-section ">
+        <div class="container text-center">
+
+            <!-- TITLE -->
+            <h2 class="features-title pt-5">
+                Explore. Enroll. Have Fun. Repeat – <br>
+                here hobby meets happiness
+            </h2>
+
+            <div class="row justify-content-center mt-5">
+
+                <!-- BOX 1 -->
+                <div class="col-md-3 col-12 feature-box">
+                    <div class="icon-wrap">
+                        <svg width="65" height="65" viewBox="0 0 24 24" fill="none">
+                            <circle cx="12" cy="12" r="10" fill="#FF8A65"/>
+                            <circle cx="9" cy="10" r="2" fill="white"/>
+                            <circle cx="14" cy="14" r="3" fill="white"/>
+                        </svg>
+                    </div>
+
+                    <h5 class="feature-heading">Learn something new</h5>
+                    <p class="feature-text">
+                        Explore your passion and go beyond boundaries of time, age, gender or geography.
+                    </p>
+                </div>
+
+                <!-- BOX 2 -->
+                <div class="col-md-3 col-12 feature-box">
+                    <div class="icon-wrap">
+                        <svg width="65" height="65" viewBox="0 0 24 24" fill="none">
+                            <rect x="3" y="4" width="18" height="14" rx="2" fill="#4FC3F7"/>
+                            <path d="M7 10h10M7 13h6" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+
+                    <h5 class="feature-heading">Skilled & Passionate Teachers</h5>
+                    <p class="feature-text">
+                        Interactive classes from trusted & qualified experts.
+                    </p>
+                </div>
+
+                <!-- BOX 3 -->
+                <div class="col-md-3 col-12 feature-box">
+                    <div class="icon-wrap">
+                        <svg width="65" height="65" viewBox="0 0 24 24" fill="none">
+                            <rect x="4" y="5" width="16" height="12" rx="2" fill="#A5D6A7"/>
+                            <rect x="10" y="17" width="4" height="2" fill="#388E3C"/>
+                        </svg>
+                    </div>
+
+                    <h5 class="feature-heading">Take classes anytime, anywhere</h5>
+                    <p class="feature-text">
+                        Learn at your own pace, from home convenience.
+                    </p>
+                </div>
+
+                <!-- BOX 4 -->
+                <div class="col-md-3 col-12 feature-box">
+                    <div class="icon-wrap">
+                        <svg width="60" height="65" viewBox="0 0 24 24">
+                            <rect x="4" y="3" width="16" height="18" rx="2" fill="#FFB74D"/>
+                            <path d="M9 9h6" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            <circle cx="12" cy="14" r="2" fill="white"/>
+                        </svg>
+                    </div>
+
+                    <h5 class="feature-heading">Pay as you go</h5>
+                    <p class="feature-text">
+                        No enrollment fee — pay only for the classes you take.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    
+    <!-- Discover classes Section -->
+    <section class="classes-section">
+
+        <div class="container">
+
+            <!-- TOP ROW -->
+            <div class="d-flex justify-content-between align-items-center flex-wrap gap-3 mb-4">
+
+                <div class="discover-left">
+                <div class="d-flex align-items-center gap-3">
+                    <h2 class="classes-title">Discover classes</h2>
+                    <a href="#" class="show-all">SHOW ALL</a>
+                </div>
+
+                <p class="discover-subtitle">
+                    Choose from a variety of classes from around the world.
+                </p>
+            </div>
+
+            <div class="price-toggle">
+                <span>Show prices in:</span>
+
+                <div class="currency-switch">
+                    <button class="active">NOK</button>
+                    <button>INR</button>
+                </div>
+            </div>
+
+            </div>
+
+            <!-- CARDS ROW -->
+            <div class="row gy-4">
+
+                <!-- CARD 1 -->
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="class-card">
+
+                        <div class="card-image">
+                            <img src="images/card.jpg" alt="">
+                            <span class="discount-tag">60% OFF</span>
+                            <span class="bookmark"><i class="fa-regular fa-bookmark"></i></span>
+                        </div>
+
+                        <div class="card-body">
+                            <span class="category">LANGUAGE</span>
+
+                            <h5 class="class-title">Class name – Lorem ipsum sit elit varsit lectusit sit amet</h5>
+
+                            <p class="teacher">
+                                by <span>John Doe</span> 
+                                <i class="fa-solid fa-star star"></i> <span class="rating">4.7</span>
+                            </p>
+
+                            <p class="description">
+                                Lorem ipsum dolor sit amet, varius consectetur varius entat consectetur adipiscing elit.
+                            </p>
+                        </div>
+
+                        <div class="card-footer">
+                            <span class="price">kr1000 <small class="old-price">kr2000</small></span>
+                            <a href="#" class="enroll-btn">Enroll now</a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Duplicate this card for other 3 items -->
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="class-card">
+                        <div class="card-image">
+                            <img src="images/card.jpg" alt="">
+                            <span class="discount-tag">60% OFF</span>
+                            <span class="bookmark"><i class="fa-regular fa-bookmark"></i></span>
+                        </div>
+                        <div class="card-body">
+                            <span class="category">LANGUAGE</span>
+                            <h5 class="class-title">Class name – Lorem ipsum sit elit varsit lectusit sit amet</h5>
+                            <p class="teacher">by <span>John Doe</span> <i class="fa-solid fa-star star"></i> 4.7</p>
+                            <p class="description">Lorem ipsum dolor sit amet, varius consectetur varius entat.</p>
+                        </div>
+                        <div class="card-footer">
+                            <span class="price">kr1000 <small class="old-price">kr2000</small></span>
+                            <a href="#" class="enroll-btn">Enroll now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="class-card">
+                        <div class="card-image">
+                            <img src="images/card.jpg" alt="">
+                            <span class="discount-tag">60% OFF</span>
+                            <span class="bookmark"><i class="fa-regular fa-bookmark"></i></span>
+                        </div>
+                        <div class="card-body">
+                            <span class="category">LANGUAGE</span>
+                            <h5 class="class-title">Class name – Lorem ipsum sit elit varsit lectusit sit amet</h5>
+                            <p class="teacher">by <span>John Doe</span> <i class="fa-solid fa-star star"></i> 4.7</p>
+                            <p class="description">Lorem ipsum dolor sit amet, varius consectetur varius entat.</p>
+                        </div>
+                        <div class="card-footer">
+                            <span class="price">₹1,499 <small class="old-price">₹1,999</small></span>
+                            <a href="#" class="enroll-btn">Enroll now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="class-card">
+                        <div class="card-image">
+                            <img src="images/card.jpg" alt="">
+                            <span class="discount-tag">60% OFF</span>
+                            <span class="bookmark"><i class="fa-regular fa-bookmark"></i></span>
+                        </div>
+                        <div class="card-body">
+                            <span class="category">LANGUAGE</span>
+                            <h5 class="class-title">Class name – Lorem ipsum sit elit varsit lectusit sit amet</h5>
+                            <p class="teacher">by <span>John Doe</span> <i class="fa-solid fa-star star"></i> 4.7</p>
+                            <p class="description">Lorem ipsum dolor sit amet, varius consectetur varius entat.</p>
+                        </div>
+                        <div class="card-footer">
+                            <span class="price">₹1,499 <small class="old-price">₹1,999</small></span>
+                            <a href="#" class="enroll-btn">Enroll now</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    
+    <!--Browse-category-section-->
+
+    <section class="browse-category-section">
+        <div class="green-shape-right"></div>
+        <div class="container ">
+
+            <h2 class="browse-title pt-5">Browse by category</h2>
+
+            <div class="row justify-content-center text-center mt-4 gx-4 gy-5">
+
+                <!-- Category CARD 1 -->
+                <div class="col-lg-3 col-md-4 col-6 category-box">
+                    <div class="category-image">
+                        <img src="images/language.jpg" alt="">
+                    </div>
+                    <p class="category-name">Language</p>
+                    <div class="underline"></div>
+                </div>
+
+                <!-- Category CARD 2 (Active) -->
+                <div class="col-lg-3 col-md-4 col-6 category-box active">
+                    <div class="category-image">
+                        <img src="images/cooking.jpg" alt="">
+                    </div>
+                    <p class="category-name">Cooking</p>
+                    <div class="underline active-line"></div>
+                </div>
+
+                <!-- Category CARD 3 -->
+                <div class="col-lg-3 col-md-4 col-6 category-box">
+                    <div class="category-image">
+                        <img src="images/music.jpg" alt="">
+                    </div>
+                    <p class="category-name">Music</p>
+                    <div class="underline"></div>
+                </div>
+
+                <!-- Category CARD 4 -->
+                <div class="col-lg-3 col-md-4 col-6 category-box">
+                    <div class="category-image">
+                        <img src="images/art.jpg" alt="">
+                    </div>
+                    <p class="category-name">Arts & Craft</p>
+                    <div class="underline"></div>
+                </div>
+
+                <!-- Category CARD 5 -->
+                <div class="col-lg-3 col-md-4 col-6 category-box">
+                    <div class="category-image">
+                        <img src="images/yoga.jpg" alt="">
+                    </div>
+                    <p class="category-name">Yoga</p>
+                    <div class="underline"></div>
+                </div>
+
+                <!-- Category CARD 6 -->
+                <div class="col-lg-3 col-md-4 col-6 category-box">
+                    <div class="category-image">
+                        <img src="images/academics.jpg" alt="">
+                    </div>
+                    <p class="category-name">Academics</p>
+                    <div class="underline"></div>
+                </div>
+
+                <!-- Category CARD 7 -->
+                <div class="col-lg-3 col-md-4 col-6 category-box">
+                    <div class="category-image">
+                        <img src="images/roots.jpg" alt="">
+                    </div>
+                    <p class="category-name">Back to Roots</p>
+                    <div class="underline"></div>
+                </div>
+
+                <!-- Category CARD 8 -->
+                <div class="col-lg-3 col-md-4 col-6 category-box">
+                    <div class="category-image">
+                        <img src="images/fun.jpg" alt="">
+                    </div>
+                    <p class="category-name">Funteresting</p>
+                    <div class="underline"></div>
+                </div>
+
+            </div>
+        </div>
+       
+    </section>
+     
+    <!--Reasons-Section-->
+    <section class="reasons-section py-5 position-relative">
+        <div class="container">
+
+            <h2 class="reasons-title mb-5">Six reasons to choose our class</h2>
+
+            <div class="row ustify-content-center text-center gy-5">
+
+                <!-- REASON 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="mb-3">
+                        <!-- ICON 1 -->
+                        <svg width="110" height="110" viewBox="0 0 24 24">
+                            <rect x="2" y="4" width="20" height="14" rx="3" fill="#4B9FFF"/>
+                            <circle cx="8" cy="13" r="3" fill="#FF7F6E"/>
+                            <rect x="13" y="9" width="6" height="2" fill="white"/>
+                            <rect x="13" y="12" width="4" height="2" fill="white"/>
+                        </svg>
+                    </div>
+                    <p class="reason-text">
+                        Interactive live online classes at<br>your convenient time slots
+                    </p>
+                </div>
+
+                <!-- REASON 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="mb-3">
+                        <!-- ICON 2 -->
+                        <svg width="110" height="110" viewBox="0 0 24 24">
+                            <circle cx="6" cy="7" r="3" fill="#FFB84D"/>
+                            <circle cx="18" cy="7" r="3" fill="#74C266"/>
+                            <circle cx="12" cy="12" r="3" fill="#4B9FFF"/>
+                            <rect x="4" y="12" width="4" height="6" fill="#FFB84D"/>
+                            <rect x="10" y="17" width="4" height="6" fill="#4B9FFF"/>
+                            <rect x="16" y="12" width="4" height="6" fill="#74C266"/>
+                        </svg>
+                    </div>
+                    <p class="reason-text">
+                        Learning from passionate,<br>talented and trusted teachers
+                    </p>
+                </div>
+
+                <!-- REASON 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="mb-3">
+                        <!-- ICON 3 -->
+                        <svg width="110" height="110" viewBox="0 0 24 24">
+                            <circle cx="12" cy="12" r="10" fill="#FF6E6E"/>
+                            <circle cx="12" cy="12" r="7" fill="white"/>
+                            <path d="M6 12h12M12 6v12" stroke="#4B9FFF" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <p class="reason-text">
+                        Cross country sharing of<br>interesting and unique hobbies<br>from across the world
+                    </p>
+                </div>
+
+                <!-- REASON 4 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="mb-3">
+                        <!-- ICON 4 -->
+                        <svg width="110" height="110" viewBox="0 0 24 24">
+                            <rect x="4" y="4" width="16" height="12" rx="3" fill="#8CD17C"/>
+                            <circle cx="12" cy="16" r="3" fill="#4B9FFF"/>
+                        </svg>
+                    </div>
+                    <p class="reason-text">
+                        Age no bar for enrolling into your<br>cherished hobby or activity classes
+                    </p>
+                </div>
+
+                <!-- REASON 5 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="mb-3">
+                        <!-- ICON 5 -->
+                        <svg width="110" height="110" viewBox="0 0 24 24">
+                            <rect x="6" y="8" width="12" height="8" fill="#FFD66E"/>
+                            <rect x="10" y="4" width="4" height="4" fill="#FF7F6E"/>
+                            <rect x="10" y="16" width="4" height="4" fill="#74C266"/>
+                        </svg>
+                    </div>
+                    <p class="reason-text">
+                        Transparent and structured fee<br>payment options
+                    </p>
+                </div>
+
+                <!-- REASON 6 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="mb-3">
+                        <!-- ICON 6 -->
+                        <svg width="110" height="110" viewBox="0 0 24 24">
+                            <circle cx="12" cy="12" r="10" fill="#8A4FFF"/>
+                            <path d="M8 14c3 2 5-2 8-5" stroke="#FFD66E" stroke-width="3" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <p class="reason-text">
+                        Contributing to the revival and<br>nurturing of traditional art forms
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="yellow-shape-right"></div>
+    </section>
+
+    <!--Community-Section-->
+    <section class="community-section py-5">
+        <div class="container">
+
+            <!-- Title -->
+            <h2 class="community-title mb-5">Love from community</h2>
+
+            <div class="row justify-content-center g-4">
+
+                <!-- CARD 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="testimonial-card">
+                        <div class="quote-icon">❝</div>
+                        <img src="images/user1.jpg" class="user-img" alt="">
+                        <h5 class="user-name">Karandeep</h5>
+                        <p class="user-text">
+                            It is nice to be on an international platform 
+                            where there are teachers from around the world.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- CARD 2 (Highlighted) -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="testimonial-card active-card">
+                        <div class="quote-icon active-quote">❝</div>
+                        <img src="images/user2.jpg" class="user-img" alt="">
+                        <h5 class="user-name active-name">Kalpana</h5>
+                        <p class="user-text active-text">
+                            The best thing about these classes is that they are
+                            live and interactive. They have classes which help us 
+                            to learn specialties and famous activities from 
+                            other countries as well.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- CARD 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="testimonial-card">
+                        <div class="quote-icon">❝</div>
+                        <img src="images/user3.jpg" class="user-img" alt="">
+                        <h5 class="user-name">Kirti</h5>
+                        <p class="user-text">
+                            As a student, I get to explore and learn about the 
+                            different cultural specialties of another country 
+                            with native teachers.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    
+    <!--Teacher-Section-->
+    <section class="teachers-section py-5">
+        <div class="container">
+
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h2 class="teachers-title">Meet our teachers</h2>
+            </div>
+
+            <div class="d-flex justify-content-end">
+                <div class="row g-4 mt-3 teacher-row-width">
+
+                    <!-- Teacher 1 -->
+                    <div class="col-md-3 col-12">
+                        <div class="teacher-photo-wrap">
+                            <img src="images/teacher1.jpg" class="teacher-photo" />
+                        </div>
+                        <h5 class="teacher-name">Karandeep</h5>
+                        <p class="teacher-category">YOGA</p>
+                    </div>
+
+                    <!-- Teacher 2 -->
+                    <div class="col-md-3 col-12">
+                        <div class="teacher-photo-wrap">
+                            <img src="images/teacher2.jpg" class="teacher-photo" />
+                        </div>
+                        <h5 class="teacher-name">Asier</h5>
+                        <p class="teacher-category">ARTS & CRAFT</p>
+                    </div>
+
+                    <!-- Teacher 3 -->
+                    <div class="col-md-3 col-12">
+                        <div class="teacher-photo-wrap">
+                            <img src="images/teacher3.jpg" class="teacher-photo" />
+                        </div>
+                        <h5 class="teacher-name">Marius Neilson</h5>
+                        <p class="teacher-category">ACADEMICS</p>
+                    </div>
+
+                    <!-- Teacher 4 faded -->
+                    <div class="col-md-3 col-12">
+                        <div class="teacher-photo-wrap faded-photo">
+                            <img src="images/teacher4.jpg" class="teacher-photo" />
+                        </div>
+                        <h5 class="teacher-name faded-text">Nichola</h5>
+                        <p class="teacher-category faded-text">LANGUAGE</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="static-controls">
+                <button class="arrow-btn">‹</button>
+                <button class="arrow-btn">›</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!--Become-Teacher-Section-->
+    <section class="become-teacher-section py-5">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <!-- LEFT IMAGE -->
+                <div class="col-lg-6 position-relative mb-4 mb-lg-0">
+                    
+                    <!-- Orange dotted shape -->
+                    <div class="teacher-orange-shape"></div>
+
+                    <!-- Blob image wrapper -->
+                    <div class="teacher-blob-wrapper">
+                        <img src="images/teacher1.jpg" class="teacher-blob-img">
+                    </div>
+
+                </div>
+
+                <!-- RIGHT CONTENT -->
+                <div class="col-lg-6">
+                    <h2 class="teacher-title pt-5">Become a certified<br>teacher</h2>
+
+                    <p class="teacher-desc">
+                        We only have the best and trusted teachers from the globe.
+                        Join us if you have the skill and passion to share it.
+                    </p>
+
+                    <ul class="teacher-list">
+                        <li>Make your own schedule</li>
+                        <li>Teach students on an international platform</li>
+                        <li>Become part of an international community of passionate educators</li>
+                    </ul>
+
+                    <button class="btn-start-teaching">
+                        START TEACHING <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+ 
+    <!--Blog-Section-->
+    <section class="blogs-section py-5">
+        <div class="container">
+
+            <!-- Section Title -->
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h2 class="blogs-title pt-5">Our blogs</h2>
+                <a href="#" class="show-all">SHOW ALL</a>
+            </div>
+
+            <!-- Blog Cards Row -->
+            <div class="row g-4">
+
+                <!-- BLOG CARD 1 -->
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="blog-card">
+
+                        <div class="blog-img-wrapper">
+                            <span class="blog-category">CATEGORY 01</span>
+                            <img src="images/blog1.jpg" class="blog-img">
+                        </div>
+
+                        <div class="blog-content">
+                            <h4 class="blog-title">
+                                Blog name - Lorem ipsum dolor sit amet, et varius et consectetur
+                            </h4>
+
+                            <p class="blog-text">
+                                Lorem ipsum dolor sit amet, consectetur vinit varius adipiscing elit. Ullamcorper lectus turpis amet varius volutpat sed...
+                            </p>
+
+                            <div class="blog-footer">
+                                <span class="publisher">Publisher name</span>
+                                <span class="comments"><i class="fa-regular fa-comment"></i> 0</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- BLOG CARD 2 -->
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="blog-card">
+
+                        <div class="blog-img-wrapper">
+                            <span class="blog-category">CATEGORY 03</span>
+                            <img src="images/blog2.jpg" class="blog-img">
+                        </div>
+
+                        <div class="blog-content">
+                            <h4 class="blog-title">
+                                Blog name - Lorem ipsum dolor sit amet, et varius et consectetur
+                            </h4>
+
+                            <p class="blog-text">
+                                Lorem ipsum dolor sit amet, consectetur vinit varius adipiscing elit. Ullamcorper lectus turpis amet varius volutpat sed...
+                            </p>
+
+                            <div class="blog-footer">
+                                <span class="publisher">Publisher name</span>
+                                <span class="comments"><i class="fa-regular fa-comment"></i> 12</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- BLOG CARD 3 -->
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="blog-card">
+
+                        <div class="blog-img-wrapper">
+                            <span class="blog-category">CATEGORY 02</span>
+                            <img src="images/blog3.jpg" class="blog-img">
+                        </div>
+
+                        <div class="blog-content">
+                            <h4 class="blog-title">
+                                Blog name - Lorem ipsum dolor sit amet, et varius et consectetur
+                            </h4>
+
+                            <p class="blog-text">
+                                Lorem ipsum dolor sit amet, consectetur vinit varius adipiscing elit. Ullamcorper lectus turpis amet varius volutpat sed...
+                            </p>
+
+                            <div class="blog-footer">
+                                <span class="publisher">Publisher name</span>
+                                <span class="comments"><i class="fa-regular fa-comment"></i> 0</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!--Box-Section-->
+    <section class="cta-section py-5">
+        <div class="container d-flex justify-content-center">
+
+            <div class="cta-box">
+                <h2 class="cta-title">
+                    Start learning new skills today and 
+                    <br> pursue your passion
+                </h2>
+
+                <p class="cta-subtext">
+                    Join the community of global learners and start exploring today.
+                </p>
+
+                <div class="cta-input-wrapper">
+                    <input type="email" class="cta-input" placeholder="Enter your email">
+                    <button class="cta-btn">
+                        GET STARTED <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+        <button class="go-top animated-top" id="goTopBtn">
+            <i class="fa-solid fa-chevron-up"></i>
+        </button>
+    </section>
+
+    <!--Fotter-Section-->
+    <footer class="footer-section py-5">
+    <div class="container">
+
+        <div class="row g-4">
+
+            <!-- Class Categories -->
+            <div class="col-md-3 col-12">
+                <h5 class="footer-title">Class Categories</h5>
+                <ul class="footer-links">
+                    <li><a href="#">Language</a></li>
+                    <li><a href="#">Cooking</a></li>
+                    <li><a href="#">Music</a></li>
+                    <li><a href="#">Arts & Craft</a></li>
+                    <li><a href="#">Yoga</a></li>
+                    <li><a href="#">Academic</a></li>
+                    <li><a href="#">Back To Roots</a></li>
+                    <li><a href="#">Funteresting</a></li>
+                </ul>
+            </div>
+
+            <!-- Company -->
+            <div class="col-md-3 col-12">
+                <h5 class="footer-title">Company</h5>
+                <ul class="footer-links">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Refund Policy</a></li>
+                </ul>
+            </div>
+
+            <!-- Learn -->
+            <div class="col-md-3 col-12">
+                <h5 class="footer-title">Learn</h5>
+                <ul class="footer-links">
+                    <li><a href="#">All Classes</a></li>
+                </ul>
+
+                <h5 class="footer-title mt-4">Teach</h5>
+                <ul class="footer-links">
+                    <li><a href="#">Become A Teacher</a></li>
+                </ul>
+            </div>
+
+            <!-- Right side promo card -->
+            <div class="col-md-3 col-12">
+                <div class="footer-card">
+                    <img src="images/blog1.jpg" alt="Products" class="footer-card-img">
+                    <div class="footer-card-caption">SELL YOUR PRODUCTS WITH US</div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Bottom Row -->
+        <hr class="footer-line">
+
+        <div class="footer-bottom d-flex justify-content-between align-items-center flex-wrap">
+            <p class="footer-copy mb-0">© Project 2021. All rights reserved.</p>
+
+            <p class="footer-made mb-0">Made with ❤️ by SimplePlan</p>
+
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+    const goTopBtn = document.getElementById("goTopBtn");
+
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 150) {  // reduced threshold
+            goTopBtn.classList.add("show");
+        } else {
+            goTopBtn.classList.remove("show");
+        }
+    });
+
+    goTopBtn.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+</script>
+
+</body>
+</html>

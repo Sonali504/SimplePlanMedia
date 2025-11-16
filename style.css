@@ -1380,9 +1380,7 @@ body {
 /* ---------------- SMALL MOBILE ---------------- */
 @media (max-width: 576px) {
 
-    *{
-        overflow-x: hidden;
-    }
+    
     .hero-title {
         font-size: 26px;
     }

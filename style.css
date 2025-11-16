@@ -1379,9 +1379,7 @@ body {
 
 /* ---------------- SMALL MOBILE ---------------- */
 @media (max-width: 576px) {
-*{
-    overflow-x: hidden;
-}
+
     
     .hero-title {
         font-size: 26px;
@@ -1446,7 +1444,7 @@ body {
 
     .chat-icon {
         bottom: 85px !important;
-        overflow-x: ;
+        overflow-x:hidden ;
     }
 
     .go-top-btn {

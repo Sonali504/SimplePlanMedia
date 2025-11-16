@@ -1439,7 +1439,7 @@ body {
 
     .chat-icon,
     .go-top-btn {
-        right: 30px !important;    /* keep inside screen */
+        right: 20px !important;    /* keep inside screen */
         width: 42px !important;    /* smaller = no overflow */
         height: 42px !important;
     }

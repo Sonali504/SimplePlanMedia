@@ -1427,3 +1427,41 @@ body {
         font-size: 16px;
     }
 }
+
+/* ===== FIX: Always show Top Button + Chat Button ===== */
+.go-top-btn,
+.chat-icon {
+    position: fixed !important;
+    z-index: 999999999 !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+}
+
+/* Safe and non-overlapping positioning */
+.chat-icon {
+    bottom: 90px !important;
+    right: 25px !important;
+}
+
+.go-top-btn {
+    bottom: 30px !important;
+    right: 25px !important;
+}
+
+/* Smaller devices: keep spacing clean */
+@media(max-width: 768px) {
+    .chat-icon {
+        bottom: 85px !important;
+        right: 15px !important;
+    }
+    .go-top-btn {
+        bottom: 25px !important;
+        right: 15px !important;
+    }
+}
+
+/* Prevent them from touching section icons */
+.reasons-section {
+    padding-bottom: 120px !important; /* safe area */
+}
